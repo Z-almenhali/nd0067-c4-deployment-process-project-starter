@@ -54,11 +54,7 @@ jobs:
       - run:
           name: Deploy App
           command: |
-            npm run frontend:install
-            npm run frontend:build
             npm run frontend:deploy
-            npm run api:install
-            npm run api:build
             npm run api:deploy
 workflows:
   udagram:
